@@ -28,7 +28,7 @@
     "recipe[trainerade::users]",
     "recipe[nodejs]",
     "recipe[nodejs::npm]",
-    "recipe[trainerade::deploybot]",
+    "recipe[trainerade::deploy]",
     "recipe[trainerade::app]"
   ]
 }
