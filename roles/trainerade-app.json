@@ -1,0 +1,31 @@
+{
+  "name": "trainerade-app",
+  "description": "Bootstraps a server to run trainerade",
+  "default_attributes": {
+    "nodejs": {
+      "install_method": "binary",
+      "version": "0.12.7",
+      "binary": {
+        "checksum": {
+          "linux_x64": "6a2b3077f293d17e2a1e6dba0297f761c9e981c255a2c82f329d4173acf9b9d5"
+        }
+      },
+      "npm": {
+        "install_method": "source",
+        "version": "3.3.6"
+      },
+      "npm_packages": [
+        {
+          "name": "pm2",
+          "version": "0.15.8"
+        }
+      ]
+    }
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[nodejs]",
+    "recipe[nodejs::npm]"
+  ]
+}
