@@ -25,6 +25,7 @@
   "run_list": [
     "recipe[apt]",
     "recipe[build-essential]",
+    "recipe[users]",
     "recipe[nodejs]",
     "recipe[nodejs::npm]"
   ]
